@@ -31,8 +31,14 @@ FROM `degrees`
 WHERE `level` = "magistrale";
 
 --Count dei dipartimenti --> 12
+SELECT COUNT(*)
+FROM `departments`;
 
 --Numero insegnanti senza Cellulare --> 50
+SELECT * 
+FROM `teachers` 
+WHERE `phone` IS NULL;
+
 
 --Inserire nella tab students nuovo record coi propri dati, in degree_id valore random 
 
