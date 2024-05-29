@@ -50,3 +50,5 @@ SET `office_number` = "126"
 WHERE `name` = "Pietro" AND `surname` = "Rizzo";
 
 --Eliminarti dopo che ti sei inserito
+DELETE FROM `students`
+WHERE `id` = 5001;
