@@ -20,6 +20,10 @@ WHERE `period` = "I semestre"
 AND `year` = "1";
 
 --Selezionare tutti gli appelli che avvengono dopo le 14 del 20/06/2020 --> 21
+SELECT * 
+FROM `exams` 
+WHERE HOUR(`hour`) >= "14" 
+AND `date` = "2020-06-20";
 
 --Selezionare tutti i corsi di laurea magistrale --> 38
 
