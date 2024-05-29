@@ -9,6 +9,9 @@ FROM `courses`
 WHERE `cfu` > "10";
 
 --Selezionare studenti over 30
+SELECT * 
+FROM `students` 
+WHERE `date_of_birth` <= CURDATE() - INTERVAL 30 YEAR
 
 --Selezionare tutti i corsi del primo semetre del primo anno di un corso di laurea qualsiasi --> 286
 
