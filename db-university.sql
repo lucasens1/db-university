@@ -41,7 +41,12 @@ WHERE `phone` IS NULL;
 
 
 --Inserire nella tab students nuovo record coi propri dati, in degree_id valore random 
+INSERT INTO `students` (`id`,`degree_id`,`name`,`surname`,`date_of_birth`,`fiscal_code`,`enrolment_date`,`registration_number`,`email`) 
+VALUES ("5001","50", "Luca", "Sensini", "1997-09-26", "SLCLCU80A36G123X", "2024-02-14","894298", "luca@sensini.it");
 
 --Cambiare ufficio a Pietro Rizzo in 126
+UPDATE `teachers` 
+SET `office_number` = "126" 
+WHERE `name` = "Pietro" AND `surname` = "Rizzo";
 
 --Eliminarti dopo che ti sei inserito
