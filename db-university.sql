@@ -14,6 +14,10 @@ FROM `students`
 WHERE `date_of_birth` <= CURDATE() - INTERVAL 30 YEAR
 
 --Selezionare tutti i corsi del primo semetre del primo anno di un corso di laurea qualsiasi --> 286
+SELECT * 
+FROM `courses` 
+WHERE `period` = "I semestre" 
+AND `year` = "1";
 
 --Selezionare tutti gli appelli che avvengono dopo le 14 del 20/06/2020 --> 21
 
