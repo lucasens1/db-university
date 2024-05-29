@@ -4,6 +4,9 @@ FROM `students`
 WHERE YEAR(`date-of-birth`) = "1990";
 
 --Selezionare tutti i corsi che valgono più di 10 crediti --> 479
+SELECT * 
+FROM `courses` 
+WHERE `cfu` > "10";
 
 --Selezionare studenti over 30
 
